@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bookrelative"
+    android:background="@drawable/bgrecyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cinaryayimlari.texnocinar.texnocinar.BookItemActivity">
+
+    <fragment
+        android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+        android:id="@+id/youtubeplayerview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/youtubeplayerview"
+        android:layout_toEndOf="@+id/imageButton2"
+        android:background="@drawable/selector"
+        android:scaleType="fitXY"
+        android:src="@drawable/next"
+        android:layout_toRightOf="@+id/imageButton2" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/youtubeplayerview"
+        android:layout_toEndOf="@+id/imageButton"
+        android:background="@drawable/selector"
+        android:scaleType="centerCrop"
+        android:src="@drawable/play"
+        android:layout_toRightOf="@+id/imageButton" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/youtubeplayerview"
+        android:background="@drawable/selector"
+        android:scaleType="fitXY"
+        android:src="@drawable/previous"
+        android:layout_alignParentLeft="true" />
+
+
+    <ImageView
+        android:id="@+id/bookthumbnail"
+        android:layout_width="150dp"
+        android:layout_height="190dp"
+        android:layout_below="@+id/imageButton3"
+        android:background="@drawable/shapeoflayout"
+        android:scaleType="centerCrop" />
+
+
+    <NumberPicker
+        android:id="@+id/numberPicker"
+        android:layout_width="60dp"
+        android:layout_height="141dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageButton3"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/shapeoflayout"
+        android:layout_marginRight="11dp"
+        android:layout_alignParentRight="true" />
+
+
+    <NumberPicker
+        android:id="@+id/numberPicker2"
+        android:layout_width="60dp"
+        android:layout_height="141dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageButton3"
+        android:background="@drawable/shapeoflayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="107dp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/textView2"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/bookthumbnail"
+        android:layout_alignStart="@+id/numberPicker2"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text=" Test "
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        app:autoSizeTextType="uniform"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/textView"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/bookthumbnail"
+        android:layout_alignLeft="@+id/numberPicker"
+        android:layout_alignStart="@+id/numberPicker"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text=" Sual "
+        android:textColor="@android:color/holo_blue_dark"
+        app:autoSizeTextType="uniform"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/imageview2"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="+994 55 224 56 26"
+        android:background="@android:color/white"
+        android:layout_alignParentLeft="true" />
+</RelativeLayout>
